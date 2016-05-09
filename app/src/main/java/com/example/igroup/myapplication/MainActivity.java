@@ -2,6 +2,7 @@ package com.example.igroup.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -98,6 +99,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+
+            startActivityForResult(new Intent(Settings.ACTION_SETTINGS),0);
 
         } else if (id == R.id.nav_share) {
 
